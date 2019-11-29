@@ -3,10 +3,9 @@ package br.com.home;
 public class Conta {
 	
 	private double saldo;
-//	int agencia = 42; //com esta implementa��o todas as inst�ncias de conta nasceriam com o atributo ag�ncia iqual a 42
-	int agencia;
-	int numero;
-	Cliente titular;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
 
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -31,5 +30,18 @@ public class Conta {
 	}
 	public double getSaldo() {
 		return this.saldo;
+	}
+	public int getNumero() {
+		return this.numero;
+	}
+	public void setNumero(int numero){
+		this.numero = numero;
+	}
+	
+	public int getAgencia() {
+		return this.agencia;
+	}
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
 	}
 }
