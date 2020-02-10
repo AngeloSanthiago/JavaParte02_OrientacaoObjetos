@@ -1,3 +1,4 @@
 ByteBank/bin/
 .classpath
 /bin/
+*.log
